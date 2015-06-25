@@ -1,7 +1,51 @@
 <!DOCTYPE html>
+
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+  <head>
+    <title>Jordan Jarvis</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <style media="screen" type="text/css">
+	
+	.text {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		margin-top: 175px;
+		margin-left: -298px;
+	}
+	
+	.rotate {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		margin-top: -350px;
+		margin-left: -250px;
+		
+		animation: rotateanimationFrames linear 2s;
+		animation-iteration-count: infinite;
+		transform-origin: 50% 50%;
+	}
+
+	@keyframes rotateanimationFrames {
+		0% {
+			transform-origin: center;
+			transform: rotate(0deg);
+		}
+		100% {
+			transform-origin: center;
+			transform: rotate(180deg);
+		}
+    }
+	
+	.body, html {
+		height: 100%;
+		background: -webkit-linear-gradient(top, #d0365a 0%,#dc4f4d 100%);
+	}
+
+    </style>
+  </head>
+  <body>
+		<img class="rotate" src="images\LargeLogo.png"></img>
+		<img class="text" src="images\SpinTest.png"></img>
+  </body>
 </html>
